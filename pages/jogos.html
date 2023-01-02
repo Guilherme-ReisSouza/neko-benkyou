@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="UTF-8">
+        <title> NEKO BENKYOU</title>
+
+        <!-- link do estilo da pagina-->
+        <link rel="stylesheet" href="../styles/estiloheader.css">
+        <link rel="stylesheet" href="../styles/estilofooter.css">
+        <link rel="stylesheet" href="../styles/estiloresponsivo.css">
+        <link rel="stylesheet" href="../styles/jogos.css">
+        <script src="https://kit.fontawesome.com/7422981fa0.js" crossorigin="anonymous"></script>
+
+        <!-- meta de responsividade-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Fontes utilizadas-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@900&display=swap" 
+        rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+        <!-- icone da pagina -->
+        <link rel="icon" id="favicon" href="../images/pageAbaIcon.png" type="image/x-icon">
+
+
+    </head>
+
+    <body>
+
+        <!-- menu da pagina (barra de cima) -->
+        <section id="header">
+
+            <a href="Index.html"> <img src="../images/nekoIcon.png" id="logoheader" class="logo" alt="nego logo"> </a>
+
+            <div>
+                <ul id="navbar">
+                    <li> <i onclick="closeMenu()"  id="cross" class="fa-solid fa-circle-xmark"></i> </li>
+                    <li> <a href="../Index.html"> SOBRE </a> </li>
+                    <li> <a href="./material.html"> MATERIAL</a> </li>
+                    <li> <a class="active" href="./jogos.html"> JOGOS </a> </li>
+                </ul>
+            </div>
+
+            <div id="mobile">
+                <i onclick="getMenu()"  id="bar"class="fa-solid fa-bars"> </i>
+            </div>
+
+        </section>
+
+        <!-- section de conteudo pagina home -->
+        <section class="conteudo">
+
+            <!-- div apenas dos textos e links -->
+            <div class="landing-text">
+                <h2 class="titulocontent"><strong> LET'S Play! </strong> <br>
+                <strong> <span class="textmark"> あなたがしなければならないことをすべてする。</span> </strong> </h2> <br><br>
+            </div>
+
+            <div class="cardsgames">
+
+                <!-- div dos cards  -->
+                <div class="card">
+                    <div class="imgBx"> 
+                        <img src="../images/memorygame.png" alt="imagem jogo da memoria">
+                    </div>
+
+                    <div class="content">
+                        <div class="details">
+                            <h3 class="titulo1"> MEMORY GAME <br> 
+                                <strong> <span class="textmark"> 記憶ゲーム </span> </strong> 
+                            </h3>
+
+                            <div class="data">
+                                <h4>MEMORIZE OS KATAKANAS E HIRAGANAS E ENCONTRE SUA TRADUÇÃO CORRETA DE SUA LETRA</h4>
+                                <a  class="btnContent" href="./memorygame.html"> jogar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <div class="imgBx"> 
+                        <img src="../images/traducaogame.png" alt="imagem jogo da memoria">
+                    </div>
+
+                    <div class="content">
+                        <div class="details">
+                            <h3 class="titulo1"> TRADUÇÃO <br> 
+                                <strong> <span class="textmark"> 翻訳 </span> </strong> 
+                            </h3>
+
+                            <div class="data">
+                                <h4>TRADUZA O MAIOR NUMERO DE FRASES POSSIVEIS EM UM CURTO ESPAÇO CONFIGURÁVEL DE TEMPO</h4>
+                                <a  class="btnContent" href="./traducaogame.html"> jogar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <div class="imgBx"> 
+                        <img src="../images/somgame.png" alt="imagem jogo da memoria">
+                    </div>
+
+                    <div class="content">
+                        <div class="details">
+                            <h3 class="titulo1"> SOLTA O SOM <br> 
+                                <strong> <span class="textmark"> 音を立てる </span> </strong> 
+                            </h3>
+
+                            <div class="data">
+                                <h4>ESCUTE O DIALOGO EM JAPONES E ESCOLHA A OPÇÃO COM O SIGNIFICADO CORRETO DA FRASE</h4>
+                                <a  class="btnContent" href="./somgame.html"> jogar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <div class="imgBx"> 
+                        <img src="../images/jogodaforcagame.png" alt="imagem jogo da memoria">
+                    </div>
+
+                    <div class="content">
+                        <div class="details">
+                            <h3 class="titulo1"> JOGO DA FORCA <br> 
+                                <strong> <span class="textmark">予測ゲーム</span> </strong> 
+                            </h3>
+
+                            <div class="data">
+                                <h4>ADIVINHE A PALAVRA EM JAPONÊS COM SUA DICA, CUIDADO COM O NUMERO DE ERROS!! </h4>
+                                <a  class="btnContent" href="./memorygame.html"> jogar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <div class="divfinalpage">
+            <img class="imgfinalpage" src="../images/finalpagegames.png" alt="gatinho do final da pagina">
+        </div>
+
+        <!-- footer da página (barra de baixo) -->
+        <section id="footersec">
+            <footer class="section-p1">
+                <div class="col">
+
+                    <img src="../images/nekofooter.png" class="logofooter" alt="logo neko"> 
+                    <h3> <strong> <span class="textmark"> Boa sorte com os estudos </span> </strong></h3>
+
+                    <div  class="follow">
+                        <div class="icon">
+                            <a href="https://www.tiktok.com/@thunderbass14?_t=8WISJFp29rC&_r=1" target="_blank"><i class="fa-brands fa-tiktok" id="icone1"></i> </a>
+                            <a href="https://www.instagram.com/thunderbassfest/" target="_blank"> <i class="fa-brands fa-instagram" id="icone2"> </i> </a>
+                            <a href="https://www.youtube.com/channel/UCGWp1s2s_ETVpxKKTVEqvZw" target="_blank"><i class="fa-brands fa-youtube" id="icone3"></i></a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="copyright">
+                    <p> © Copyright @ 2021 By Guilherme Reis Queiroz De Souza ™</p>
+                </div>
+        
+        
+            </footer>
+        </section>
+
+        <script src="../scripts/menucolapse.js"></script>
+        <script type="text/javascript" src="../scripts/vanilla-tilt.min.js"></script>
+    </body>
+
+</html>

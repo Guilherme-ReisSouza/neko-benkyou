@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="UTF-8">
+        <title> MEMORY GAME </title>
+
+        <!-- link do estilo da pagina-->
+
+        <link rel="stylesheet" href="../styles/estiloresponsivo.css">
+        <link rel="stylesheet" href="../styles/traducaogame.css">
+        <script src="https://kit.fontawesome.com/7422981fa0.js" crossorigin="anonymous"></script>
+
+        <!-- meta de responsividade-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Fontes utilizadas-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@900&display=swap" 
+        rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+        <!-- icone da pagina -->
+        <link rel="icon" id="favicon" href="../images/pageAbaIcon.png" type="image/x-icon">
+
+
+    </head>
+
+    <body>
+
+        <div class="game">
+
+            <div class="start-screen">
+                <button id="start-button">Começar</button>
+            </div>
+            <div id="display-container">
+                <div class="header">
+                    <div class="number-of-count">
+                        <span class="number-of-question"></span>
+                    </div>
+                    <div class="timer-div">
+                        <img src="../images/traducaogame/timer-icon.svg" />
+                        <span class="time-left"></span>
+                    </div>
+                </div>
+                <div id="container">
+                    <!-- questions and options will be displayed here -->
+                </div>
+                <button id="next-button">Próximo</button>
+                <div class="errorstatus">
+                    <img id="avatarerro" src="../images/memorygame/avatarerro/muitobom.png" alt="ERROS AVATAR">
+                </div>
+            </div>
+
+            <div class="score-container hide">
+                <div id="user-score">Pontos</div>
+                <button id="restart">Restart</button>
+                <div class="errorstatus">
+                    <img id="avatarerrofinal" src="../images/memorygame/avatarerro/muitobom.png" alt="ERROS AVATAR">
+                </div>
+            </div>
+
+        </div>
+
+        <script type="text/javascript" src="../scripts/traducaogame.js"></script>
+    </body>
+
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="UTF-8">
+        <title> NEKO BENKYOU</title>
+
+        <!-- link do estilo da pagina-->
+        <link rel="stylesheet" href="./styles/estiloheader.css">
+        <link rel="stylesheet" href="./styles/estilofooter.css">
+        <link rel="stylesheet" href="./styles/estiloresponsivo.css">
+        <link rel="stylesheet" href="./styles/home.css">
+        <script src="https://kit.fontawesome.com/7422981fa0.js" crossorigin="anonymous"></script>
+
+        <!-- meta de responsividade-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Fontes utilizadas-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@900&display=swap" 
+        rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+        <!-- icone da pagina -->
+        <link rel="icon" id="favicon" href="./images/pageAbaIcon.png" type="image/x-icon">
+
+
+    </head>
+
+    <body>
+
+        <!-- menu da pagina (barra de cima) -->
+        <section id="header">
+
+            <a href="Index.html"> <img src="./images/nekoIcon.png" id="logoheader" class="logo" alt="nego logo"> </a>
+
+            <div>
+                <ul id="navbar">
+                    <li> <i onclick="closeMenu()"  id="cross" class="fa-solid fa-circle-xmark"></i> </li>
+                    <li> <a class="active" href="Index.html"> SOBRE </a> </li>
+                    <li> <a href="./pages/material.html"> MATERIAL</a> </li>
+                    <li> <a href="./pages/jogos.html"> JOGOS </a> </li>
+                </ul>
+            </div>
+
+            <div id="mobile">
+                <i onclick="getMenu()"  id="bar"class="fa-solid fa-bars"> </i>
+            </div>
+
+        </section>
+
+        <!-- section de conteudo landing page (tipo um banner) -->
+        <section id="landingpage">
+
+            <!-- div apenas dos textos do "banner " -->
+            <div class="landing-text">
+                <h2 class="titulo1">皆さん、こんにちは！<br>
+                    <strong> <span class="textmark"> 今日、日本語を勉強しましたか。</span> </strong>
+                </h2>
+                <h4>
+                    Estudar pode ser divertido! <br> jogue e pratique a lingua japonesa de maneira divertida e fluida!
+                </h4>
+            </div>
+
+            <!-- div apenas da imagem do "banner"-->
+            <div class="landing-img">
+                <img  id="livrobanner" data-tilt data-tilt-full-page-listening src="./images/landingpagebook.png" alt="imagem de icones de livros"/>
+            </div>
+
+        </section>
+
+
+        <!-- section de conteudo pagina home -->
+        <section class="conteudo">
+
+            <div class="zigzagContent zigzagContentInv">
+
+                <!-- div apenas da imagem-->
+                <div class="landing-img" data-tilt data-tilt-full-page-listening>
+                    <img  class="contentimg" src="./images/twitchimg.png" alt="imagem de icones de livros"/>
+                </div>
+
+                <!-- div apenas dos textos e links -->
+                <div class="landing-text">
+                    <h4 class="titulocontent">Apresentação <strong> 「 自己紹介 」 </strong> </h2>
+                    <h3 class="subtextContent"> <strong> <span class="textmark"> はじめまして、あなただけの自習スペースへようこそ。</span> </strong> </h3>
+                    <h4 class="textContent">
+                        Olá viajante, seja bem vindo ao seu espaço diferenciado de Nihongo! <br>
+                        Aqui temos como ponto chave estimular o estudo de uma maneira mais <br> 
+                        divertida, com jogos, musica e testes para por em pratica tudo o que estudou. <br>
+                        Na twitch costumo realizar lives para estudar junto com telespectadores! seja bem vindo a comunidade! <br>
+                    </h4>
+
+                    <a  class="btnContent" href="https://www.twitch.tv/ttams"> twitch </a>
+                </div>
+
+            </div>
+
+            <div id="transicao">
+                <div id="amarelo"></div>
+                <div id="vermelho"></div>
+            </div>
+
+            <div class="zigzagContent segundocont">
+
+                <!-- div apenas dos textos e links -->
+                <div class="landing-text">
+                    <h4 class="titulocontent">Material de consulta <strong> 「 参考資料 」 </strong> </h2>
+                    <h3 class="subtextContent"> <strong> <span class="textmark"> 他の調査と同様に、書籍、PDF、および要約を使用する必要があります。</span> </strong> </h3>
+                    <h4 class="textContent">
+                        Estudar com um resumão de qualidade, PDF's explicativos e materiais <br>
+                        ajudam muito a aumentar o nível de interesse, e aqui não é diferente!, na aba <br>
+                        MATERIAL você conta com PDF's e resumos da matéria ao longo do meu estudo de 日本語.<br>
+                        divirta-se!<br>
+                    </h4>
+
+                    <a  class="btnContent" href="./pages/material.html"> Material</a>
+                </div>
+
+                <!-- div apenas da imagem-->
+                <div class="landing-img" data-tilt data-tilt-full-page-listening>
+                    <img  class="contentimg" src="./images/materialimg.png" alt="imagem de icones de livros"/>
+                </div>
+
+            </div>
+
+            <div class="zigzagContent zigzagContentInv">
+
+                <!-- div apenas da imagem-->
+                <div class="landing-img" data-tilt data-tilt-full-page-listening>
+                    <img  class="contentimg" src="./images/gamesimg.png" alt="imagem de icones de livros"/>
+                </div>
+
+                <!-- div apenas dos textos e links -->
+                <div class="landing-text">
+                    <h4 class="titulocontent">Jogos virtuais <strong> 「 仮想ゲーム」 </strong> </h2>
+                    <h3 class="subtextContent"> <strong> <span class="textmark">伝統的な方法で日本語を勉強するよりも、遊んで学ぶほうがよい。</span> </strong> </h3>
+                    <h4 class="textContent">
+                        Aqui contamos com 4 jogos para testar toda seu nivel de entendimento da 
+                        língua japonesa, sendo um para audição, outro para memorização de <br>kanjis
+                        N5, hiraganas ou katakanas e outro jogo para entendimento de <br> textos e frases
+                        com e sem kanjis!<br>
+                    </h4>
+
+                    <a  class="btnContent" href="./pages/jogos.html"> jogar </a>
+                </div>
+
+            </div>
+
+        </section>
+
+        <div class="divfinalpage">
+            <img class="imgfinalpage" src="./images/nekofinalpagehome.png" alt="gatinho do final da pagina">
+        </div>
+
+        <!-- footer da página (barra de baixo) -->
+        <section id="footersec">
+            <footer class="section-p1">
+                <div class="col">
+
+                    <img src="./images/nekofooter.png" class="logofooter" alt="logo neko"> 
+                    <h3> <strong> <span class="textmark"> Boa sorte com os estudos </span> </strong></h3>
+
+                    <div  class="follow">
+                        <div class="icon">
+                            <a href="https://www.tiktok.com/@thunderbass14?_t=8WISJFp29rC&_r=1" target="_blank"><i class="fa-brands fa-tiktok" id="icone1"></i> </a>
+                            <a href="https://www.instagram.com/thunderbassfest/" target="_blank"> <i class="fa-brands fa-instagram" id="icone2"> </i> </a>
+                            <a href="https://www.youtube.com/channel/UCGWp1s2s_ETVpxKKTVEqvZw" target="_blank"><i class="fa-brands fa-youtube" id="icone3"></i></a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="copyright">
+                    <p> © Copyright @ 2021 By Guilherme Reis Queiroz De Souza ™</p>
+                </div>
+        
+        
+            </footer>
+        </section>
+
+        <script src="./scripts/menucolapse.js"></script>
+        <script type="text/javascript" src="./scripts/vanilla-tilt.min.js"></script>
+    </body>
+
+</html>

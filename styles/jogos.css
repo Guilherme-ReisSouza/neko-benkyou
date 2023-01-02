@@ -1,0 +1,363 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 0.15rem;
+    --cor-bg: #FFFFFF;
+    --cor-links: #5271FF ;
+    --cor-text: #171717;
+    --cor-marker: #D4145A;
+    --cor-hover: #FFBD15;
+
+}
+
+.conteudo{
+    padding-bottom: 250px;
+}
+
+.landing-text{
+    margin-top: 45px;
+}
+
+.titulocontent{
+    text-align: center;
+    margin-left: 25px;
+    color: var(--cor-marker);
+}
+.subtextContent{
+    font-size: 28px;
+}
+.textContent{
+    text-align: center;
+    margin-left: 25px;
+    font-size: 24px;
+}
+
+.btnContent{
+
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5271FF;
+    height: 49px;
+    border-radius: 30px;
+    margin-left: 40%;
+    margin-right: 40%;
+}
+.btnContent{
+
+    border: solid 4px var(--cor-marker);
+    font-size: 28px;
+    color: var(--cor-bg);
+    transition: 0.5s ease-in-out;
+}
+
+.btnContent:hover{
+
+    margin-bottom: 10px;
+    height: 54px;
+    margin-left: 38%;
+    margin-right: 38%;
+    cursor: pointer;
+    color: var(--cor-marker);
+    transition: 0.5s ease-in-out;
+}
+
+
+/* cards estilização*/
+.cardsgames{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+.card{
+    position: relative;
+    width: 350px;
+    height: 250px;
+    background: var(--cor-links);
+    border-radius: 20px;
+    box-shadow: 0px 10px 20px #17171780;
+    transition: 0.5s ease-in-out;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.card:hover{
+    height: 500px;
+
+}
+
+.imgBx{
+    position: absolute;
+    left: 50%;
+    top: -80px;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 150px;
+    background-color: var(--cor-marker);
+    border-radius: 20px;
+    box-shadow: 0px 15px 20px #17171780;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+
+}
+
+.card:hover .imgBx{
+    width: 170px;
+    height: 170px;
+}
+
+.imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+.card .content .details{
+    text-align: center;
+    width: 100%;
+    transition: 0.5s ease-in-out;
+    transform: translateY(200px);
+}
+
+.card:hover .content .details{
+    transform: translateY(-20px);
+}
+
+.btnContent{
+    margin-right: 70px;
+    margin-left: 70px;
+}
+
+.btnContent:hover{
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+
+
+
+/* 
+padrão de telas:
+mobile -- 576px; 
+tablet -- 768px;
+laptop -- 992px;
+desktop -- 1200px;
+*/
+
+/* desktop */
+@media (max-width:1440px){
+
+    h4{
+        font-size: 24px;
+    }
+
+    .card{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+
+/* laptop */
+@media (max-width:1024px){
+    .cardsgames{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 100px;
+    }
+
+    .card{
+        margin-bottom: 150px;
+    }
+}
+
+/* tablet */
+@media (max-width:768px){
+    h2{
+        font-size: 34px;
+    }
+    h4{
+        font-size: 30px;
+    }
+    /* conteudo da pagina home */
+
+    .titulocontent{
+        text-align: center;
+        font-size: 18px;
+        color: var(--cor-marker);
+    }
+    .subtextContent{
+        font-size: 28px;
+    }
+    .textContent{
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .btnContent{
+
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #5271FF;
+        height: 49px;
+        border-radius: 30px;
+        margin-left: 35%;
+        margin-right: 35%;
+    }
+    .btnContent{
+
+        border: solid 4px var(--cor-marker);
+        font-size: 28px;
+        color: var(--cor-bg);
+        transition: 0.5s ease-in-out;
+    }
+
+    .btnContent:hover{
+
+        margin-bottom: 10px;
+        height: 54px;
+        margin-left: 32%;
+        margin-right: 32%;
+        cursor: pointer;
+        color: var(--cor-marker);
+        transition: 0.5s ease-in-out;
+    }
+
+    /*conteudo card*/
+    h4{
+        font-size: 26px;
+    }
+    .titulocontent{
+        font-size: 30px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+
+/* mobile */
+@media (max-width:576px){
+
+    h2{
+        font-size: 30px;
+    }
+
+    .titulo1{
+        margin-top: 40px;
+        margin-bottom: 10px;
+    }
+
+    .btnContent{
+
+        margin-left: 32%;
+        margin-right: 32%;
+    }
+    .btnContent:hover{
+
+        margin-bottom: 10px;
+        height: 54px;
+        margin-left: 29%;
+        margin-right: 29%;
+        cursor: pointer;
+        color: var(--cor-marker);
+        transition: 0.5s ease-in-out;
+    }
+
+    /*conteudo card*/
+    h3{
+        font-size: 44px;
+    }
+    .card .content .details{
+        transform: translateY(174px);
+    }
+    
+    .card:hover .content .details{
+        transform: translateY(-20px);
+    }
+}
+
+
+/* very small */
+@media (max-width:375px){
+
+    h2{
+        font-size: 28px;
+        font-weight: bolder;
+    }
+
+    .titulo1{
+        margin-top: -80px;
+        margin-bottom: 10px;
+    }
+    .textmark{
+        font-size: 34px;
+    }
+
+    h4{
+        font-size: 26px;
+    }
+
+}
+
+
+@media (max-width:373px){
+
+    h2{
+        font-size: 32px;
+        font-weight: bolder;
+    }
+    .titulo1{
+        margin-top: -20px;
+        margin-bottom: 10px;
+    }
+
+    .btnContent{
+
+        margin-left: 29%;
+        margin-right: 29%;
+    }
+    .btnContent:hover{
+
+        margin-bottom: 10px;
+        height: 54px;
+        margin-left: 26%;
+        margin-right: 26%;
+        cursor: pointer;
+        color: var(--cor-marker);
+        transition: 0.5s ease-in-out;
+    }
+
+
+    /*conteudo card*/
+    .card{
+        width: 250px;
+    }
+
+    h3{
+        font-size: 30px;
+    }
+
+    h4{
+        font-size: 20px;
+    }
+    
+}
